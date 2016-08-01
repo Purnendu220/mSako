@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".BeneficiaryListActivity" 
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <TextView
+                android:id="@+id/tpuuptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Twitter Friends List"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#cc6666"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#cc6666" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background1"
+        android:gravity="center" >
+
+        <ListView
+            android:id="@+id/twitterlistView1"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp" >
+        </ListView>
+    </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Refresh"
+            android:textStyle="bold" />
+ 
+
+</LinearLayout>

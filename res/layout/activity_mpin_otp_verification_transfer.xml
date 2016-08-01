@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <!-- Header  Starts -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/header_gradient"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <!-- Logo Start -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/ic_launcher" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!-- Header Ends -->
+        <!-- Footer Start -->
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="@layout/footer_repeat"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+
+        <!-- Login Form -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:visibility="visible" >
+
+            <!-- Email Label -->
+
+            <TextView
+                android:id="@+id/tpuuptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mPin Verification "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/theme_colcor"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/theme_colcor1" />
+
+            <TextView
+                android:id="@+id/mpin_lable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="mPin"
+                android:textColor="@color/theme_colcor"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/mPin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/bg_edittext"
+                android:inputType="numberPassword"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/otp_lable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="OTP"
+                android:textColor="@color/theme_colcor"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/bg_edittext"
+                android:inputType="numberPassword"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:visibility="invisible" />
+
+            <!-- Login button -->
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+            android:background="@drawable/bg_button_drawable"
+                android:text="Verify"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <!-- Email Label -->
+
+            <TextView
+                android:id="@+id/tpuuptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Result "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/theme_colcor"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/theme_colcor1" />
+
+            <LinearLayout
+                android:id="@+id/linearlayoutloanchild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayoutloan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selected_bg"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text_transactionresult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction Declined"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/text_transactionresult_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sorry your money Transfer request is declined.Please check details below."
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:id="@+id/transfer_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Status" />
+
+                    <TextView
+                        android:id="@+id/textViewstatusresult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Receiver Not Exists in the system." />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:id="@+id/transfer_txnid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewtxnid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Txn Id" />
+
+                    <TextView
+                        android:id="@+id/textViewtxnidnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="4858695484948" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:id="@+id/transfer_txnamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewtxnamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Txn Amount" />
+
+                    <TextView
+                        android:id="@+id/textViewtxnamountvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="500.0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:id="@+id/transfer_txnprocessingfee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewtxnprocessingfee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Processing fee" />
+
+                    <TextView
+                        android:id="@+id/textViewtxnprocessingfeeamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="NA" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray" />
+                
+                   <LinearLayout
+                    android:id="@+id/transfer_receivermobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewreceivermobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Receiver Mobile No" />
+
+                    <TextView
+                        android:id="@+id/textViewreceivermobilevalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="9182938493" />
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"/>
+                
+                 <LinearLayout
+                    android:id="@+id/transfer_receivername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewreceivername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Receiver Name" />
+
+                    <TextView
+                        android:id="@+id/textViewreceivernamevalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Wpits" />
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"/>
+                
+                 <LinearLayout
+                    android:id="@+id/transfer_availbal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewavailbal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Available Balance" />
+
+                    <TextView
+                        android:id="@+id/textViewravailbalvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="478" />
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"/>
+                
+                <LinearLayout
+                    android:id="@+id/transfer_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="Txn Time" />
+
+                    <TextView
+                        android:id="@+id/textViewtimevalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:text="30 Apr 2016 12:17:35 PM" />
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnbacktoloan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/ab_background_textured_example"
+                android:text="Try Again"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- Login Form Ends -->
+
+        <TextView
+            android:id="@+id/textViewaccountstatusmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewaccountstatus"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Hey User Your account is inactive.Please pay your registration fee to activate your account.."
+            android:textColor="#000000"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</ScrollView>

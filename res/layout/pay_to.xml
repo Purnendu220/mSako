@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_others" >
+
+    <!-- Header  Starts -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/header_gradient"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <!-- Logo Start -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="Pay To"
+            android:src="@drawable/ic_launcher" />
+        <!-- Logo Ends -->
+    </LinearLayout>
+    <!-- Header Ends -->
+    <!-- Footer Start -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/strip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <!-- Footer Ends -->
+
+
+    <!-- Login Form -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_rounded"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <!-- Destination Label -->
+
+        <TextView
+            android:id="@+id/tpuuptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer fund to m SAKO account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/theme_colcor"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/theme_colcor1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textacctype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Type"
+            android:textColor="@color/theme_colcor"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinneracctype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewloanlimit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/myspinnerbg"
+            android:entries="@array/acctype"
+            android:gravity="center_horizontal"
+            android:prompt="@string/id_acctype" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination Mobile"
+            android:textColor="@color/theme_colcor"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/dest_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_edittext"
+            android:hint="Enter msako account number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <!-- Destination Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textColor="@color/theme_colcor"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_edittext"
+            android:hint="Amount"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <!-- Destination Label -->
+
+        <TextView
+            android:id="@+id/remark_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Remark"
+            android:textColor="@color/theme_colcor"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/remark_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_edittext"
+            android:hint="Remark"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/mPin_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="mPin"
+            android:textColor="@color/theme_colcor"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/mPin_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_edittext"
+            android:inputType="numberPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <!-- Login button -->
+
+        <Button
+            android:id="@+id/pay_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_button_drawable"
+            android:text="Transfer"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- Login Form Ends -->
+
+
+    <!--
+           <TextView
+          android:id="@+id/textmessage"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/linearLayout1"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="32dp"
+          android:text="Medium Text"
+          android:textColor="#000000"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+    -->
+
+</RelativeLayout>

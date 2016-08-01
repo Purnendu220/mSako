@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_login" >
+
+    <!-- Header  Starts -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@layout/header_gradient"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <!-- Logo Start -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ic_launcher" />
+        <!-- Logo Ends -->
+    </LinearLayout>
+    <!-- Header Ends -->
+    <!-- Footer Start -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@layout/footer_repeat"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+    </LinearLayout>
+    <!-- Footer Ends -->
+
+
+    <!-- Login Form -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_rounded"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- Email Label -->
+
+        <TextView
+            android:id="@+id/tpuuptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/theme_colcor"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/theme_colcor1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mobile_lable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="@color/theme_colcor"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/mMobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Enter your mobile number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/mPin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Enter MPIN"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edittext"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:visibility="invisible" />
+
+        <!-- Login button -->
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/bg_button_drawable"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewaccountstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:text="Account Status:-InActive"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewaccountstatusmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewaccountstatus"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Hey User Your account is inactive.Please pay your registration fee to activate your account.."
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnforgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Forget Password"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- Login Form Ends -->
+
+</RelativeLayout>

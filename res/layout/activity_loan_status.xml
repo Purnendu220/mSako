@@ -1,0 +1,398 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wpits.mwalletsamba.Loan_Activity" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@layout/header_gradient"
+        android:paddingBottom="5dip" >
+
+        <!-- Logo Start -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ic_launcher" />
+        <!-- Logo Ends -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@layout/footer_repeat"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnloan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_button_drawable"
+        android:text="Edit Loan Request"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Your Requested Loan amount 18000"
+        android:textColor="@color/theme_colcor" />
+
+    <TextView
+        android:id="@+id/textviewloantype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Loan Type: Devlopment Loan"
+        android:textColor="@color/theme_colcor" />
+
+    <TextView
+        android:id="@+id/loanstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewloantype"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:text="Loan Amount: 18000"
+        android:textColor="@color/theme_colcor" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/loantenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loanstatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Loan Tenure: 12 Months"
+        android:textColor="@color/theme_colcor" />
+    
+    <TextView
+        android:id="@+id/ownreservevalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loantenure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Own Reserve Amount: 200"
+        android:textColor="@color/theme_colcor" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnloan"
+        android:layout_below="@+id/ownreservevalue"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinner2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=" Guarantee Request Status "
+                android:textColor="@color/theme_colcor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/gauranter1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextgauranter1msisdn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="8130835223" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter1reservevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="2500" />
+
+                <View
+                    android:id="@+id/viewl1"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter1status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Accepted" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gauranter2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextgauranter2msisdn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="9136311290" />
+
+                <View
+                    android:id="@+id/viewgg2"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter2reservevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="4500" />
+
+                <View
+                    android:id="@+id/viewl2"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter2status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Accepted" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gauranter3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextgauranter3msisdn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="8928671526" />
+
+                <View
+                    android:id="@+id/viewgg3"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter3reservevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="2500" />
+
+                <View
+                    android:id="@+id/viewgg3"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter3status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Waiting" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gauranter4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextgauranter4msisdn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="8382938928" />
+
+                <View
+                    android:id="@+id/viewgg4"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter4reservevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="4500" />
+
+                <View
+                    android:id="@+id/viewgg4"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter4status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Rejected" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gauranter5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextgauranter5msisdn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="7483929283" />
+
+                <View
+                    android:id="@+id/viewgg5"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter5reservevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="4000" />
+
+                <View
+                    android:id="@+id/viewgg6"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/theme_colcor1" />
+
+                <TextView
+                    android:id="@+id/editTextgauranter5status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Accepted" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewg6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/theme_colcor1" />
+
+            <TextView
+                android:id="@+id/textViewtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/theme_colcor"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mWallet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chashout">Chashout</string>
+    <string name="title_activity_topup">Topup</string>
+    <string name="title_activity_pin_change">PinChange</string>
+    <string name="title_activity_ticket">Ticket</string>
+    <string name="oprater_prompt">Choose a oprater</string>
+
+    <string-array name="oprater_arrays">
+        <item>Select Operator</item>
+        <item>MPT</item>
+        <item>Telenor</item>
+        <item>Ooredoo</item>
+    </string-array>
+
+    <string name="id_prompt">Choose an id type</string>
+
+    <string-array name="id_arrays">
+        <item>PAN</item>
+        <item>Adhar </item>
+        <item>Voter Id</item>
+        <item>Other</item>
+    </string-array>
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">http://wpitservices.in</string>
+    <string name="twitter_consumer_key">JjaGSMorCiMUsFinoqoh7dn8o</string>
+    <string name="twitter_consumer_secret">4ZjFu1izG8VOG3ms3k5NLLkKfqAahVUhxPQBcT4tcqh3j70bk0</string>
+    <string name="twitter_oauth_verifier">http://api.twitter.com/oauth/access_token</string>
+    <string name="title_activity_enter_mobile__no__subscriber">EnterMobile_No_Subscriber</string>
+    <string name="title_activity_enter__mobile__no__agent">Enter_Mobile_No_Agent</string>
+    <string name="title_activity_register__subscriber">Register_Subscriber</string>
+    <string name="title_activity_register__agent">Register_Agent</string>
+    <string name="title_activity_enter_otp_agent">Enter_otp_agent</string>
+    <string name="title_activity_enter_otp_subscriber">Enter_otp_subscriber</string>
+    <string name="title_activity_update__profile">Update_Profile</string>
+    <string name="title_activity_clear_data">ClearData</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_forgot__otp">Forgot_Otp</string>
+    <string name="title_activity_forgot__reset__password">Forgot_Reset_Password</string>
+    <string name="title_activity_twitter__transfer">Twitter_Transfer</string>
+    <string name="title_activity_agent__registration">Agent_Registration</string>
+
+    <string-array name="id_arrays_states">
+        <item>ANDHRA PRADESH</item>
+        <item>ASSAM</item>
+        <item>ARUNACHAL PRADESH</item>
+        <item>GUJRAT</item>
+        <item>BIHAR</item>
+        <item>HARYANA</item>
+        <item>HIMACHAL PRADESH</item>
+        <item>JAMMU KASHMIR</item>
+        <item>KARNATAKA</item>
+        <item>KERALA</item>
+        <item>MADHYA PRADESH</item>
+        <item>MAHARASHTRA</item>
+        <item>MANIPUR</item>
+        <item>MEGHALAYA</item>
+        <item>MIZORAM</item>
+        <item>NAGALAND</item>
+        <item>ORISSA</item>
+        <item>PUNJAB</item>
+        <item>RAJASTHAN</item>
+        <item>SIKKIM</item>
+        <item>TAMIL NADU</item>
+        <item>TRIPURA</item>
+        <item>UTTAR PRADESH</item>
+        <item>WEST BENGAL</item>
+        <item>DELHI</item>
+        <item>GOA</item>
+        <item>PONDICHERY</item>
+        <item>LAKSHDWEEP</item>
+        <item>DAMAN DIU</item>
+        <item>DADRA NAGAR</item>
+        <item>CHANDIGARH</item>
+        <item>ANDAMAN NICOBAR</item>
+        <item>UTTARANCHAL</item>
+        <item>JHARKHAND</item>
+        <item>CHATTISGARH</item>
+    </string-array>
+    <string-array name="loantype">
+        <item>Loan Type</item>
+        <item>Devlopment Loan</item>
+        <item>Emergency Loan</item>
+    </string-array>
+    <string-array name="acctype">
+        <item>Account Type</item>
+        <item>Wallet Account</item>
+        <item>Loan Account</item>
+    </string-array>
+
+    <string name="id_loantype">Choose Loan type</string>
+    <string name="id_tenure">Choose Loan Tenure</string>
+    <string name="id_acctype">Choose Loan type</string>
+
+    <string-array name="loanTenure">
+        <item>Loan Tenure</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>9 Months</item>
+        <item>12 Months</item>
+    </string-array>
+
+    <string name="title_activity_animation">AnimationActivity</string>
+    <string name="title_activity_askm_pin">AskmPin</string>
+    <string name="title_activity_mpin_otp_verification_loan">MpinOtpVerificationLoan</string>
+    <string name="title_activity_account_detail">AccountDetail</string>
+    <string name="title_activity_mpin_otp_verification_transfer">MpinOtpVerificationTransfer</string>
+    <string name="title_activity_httptransfermoney">Httptransfermoney</string>
+    <string name="title_activity_edit_loan_request">Edit_loan_request</string>
+    <string name="title_activity_notificationmpin">Notificationmpin</string>
+    <string name="title_activity_changempinfirst">Changempinfirst</string>
+    <string name="title_activity_transfer_option">TransferOptionActivity</string>
+    <string name="title_activity_loan_option">LoanOptionActivity</string>
+    <string name="title_activity_loan_type_options">LoanTypeOptions</string>
+    <string name="title_activity_deposit_money">DepositMoney</string>
+    <string name="title_activity_faqs">FAQs</string>
+    <string name="title_activity_help">Help</string>
+    <string name="deposite_money">Deposite Money screen:Hi %s, Please use your mpesa account to start depositing amount to your registered mSako account.</string>
+
+</resources>

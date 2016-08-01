@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wpits.mwalletsamba"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="MobiWallet"
+        android:manageSpaceActivity=".ClearData"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name=".SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Entry for RegisterActivity.class -->
+        <activity
+            android:name=".loan_activity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".Loanstatus"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".LoanRequest"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".RegisterActivity" >
+        </activity>
+        <activity android:name=".MiniStatement" >
+        </activity>
+        <activity android:name=".LoginActivity" >
+        </activity>
+        <activity android:name=".EnterOTP_RegisterActivity" >
+        </activity>
+        <activity android:name=".EnterMobile_RegisterActivity" >
+        </activity>
+        <activity android:name=".AndroidGridLayoutActivity" >
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".MainActivity1" >
+        </activity>
+        <activity android:name=".TwitterBenefList" >
+        </activity>
+        <activity android:name=".PayToActivity" >
+        </activity>
+        <activity android:name=".PayToWithoutIdActivity" >
+        </activity>
+        <activity android:name=".WebViewActivity" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.wpits.mwalletsamba" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".ReService" />
+        <service android:name=".GCMIntentService" >
+        </service>
+
+        <activity
+            android:name=".Chashout"
+            android:label="@string/title_activity_chashout" >
+        </activity>
+        <activity
+            android:name=".Topup"
+            android:label="@string/title_activity_topup" >
+        </activity>
+        <activity
+            android:name=".PinChange"
+            android:label="@string/title_activity_pin_change" >
+        </activity>
+        <activity
+            android:name=".Ticket"
+            android:label="@string/title_activity_ticket" >
+        </activity>
+        <activity
+            android:name=".EnterMobile_No_Subscriber"
+            android:label="@string/title_activity_enter_mobile__no__subscriber" >
+        </activity>
+        <activity
+            android:name=".Enter_Mobile_No_Agent"
+            android:label="@string/title_activity_enter__mobile__no__agent" >
+        </activity>
+        <activity
+            android:name=".Register_Subscriber"
+            android:label="@string/title_activity_register__subscriber" >
+        </activity>
+        <activity
+            android:name=".Register_Agent"
+            android:label="@string/title_activity_register__agent" >
+        </activity>
+        <activity
+            android:name=".Enter_otp_agent"
+            android:label="@string/title_activity_enter_otp_agent" >
+        </activity>
+        <activity
+            android:name=".Enter_otp_subscriber"
+            android:label="@string/title_activity_enter_otp_subscriber" >
+        </activity>
+        <activity
+            android:name=".Update_Profile"
+            android:label="@string/title_activity_update__profile" >
+        </activity>
+        <activity
+            android:name=".ClearData"
+            android:label="@string/title_activity_clear_data" >
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password" >
+        </activity>
+        <activity
+            android:name=".Forgot_Otp"
+            android:label="@string/title_activity_forgot__otp" >
+        </activity>
+        <activity
+            android:name=".Forgot_Reset_Password"
+            android:label="@string/title_activity_forgot__reset__password" >
+        </activity>
+        <activity
+            android:name=".Twitter_Transfer"
+            android:label="@string/title_activity_twitter__transfer" >
+        </activity>
+        <activity
+            android:name=".Agent_Registration"
+            android:label="@string/title_activity_agent__registration"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".Notification" >
+        </activity>
+        <activity android:name=".Referal" >
+        </activity>
+        <activity
+            android:name=".AskmPin"
+            android:label="@string/title_activity_askm_pin" >
+        </activity>
+        <activity
+            android:name=".MpinOtpVerificationLoan"
+            android:label="@string/title_activity_mpin_otp_verification_loan" >
+        </activity>
+        <activity
+            android:name=".AccountDetail"
+            android:label="@string/title_activity_account_detail" >
+        </activity>
+        <activity
+            android:name=".MpinOtpVerificationTransfer"
+            android:label="@string/title_activity_mpin_otp_verification_transfer" >
+        </activity>
+        <activity
+            android:name=".Httptransfermoney"
+            android:label="@string/title_activity_httptransfermoney" >
+        </activity>
+        <activity
+            android:name=".Edit_loan_request"
+            android:label="@string/title_activity_edit_loan_request"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".Notificationmpin"
+            android:label="@string/title_activity_notificationmpin" >
+        </activity>
+        <activity
+            android:name=".Changempinfirst"
+            android:label="@string/title_activity_changempinfirst" >
+        </activity>
+        <activity
+            android:name=".TransferOptionActivity"
+            android:label="@string/title_activity_transfer_option" >
+        </activity>
+        <activity
+            android:name=".LoanOptionActivity"
+            android:label="@string/title_activity_loan_option" >
+        </activity>
+        <activity
+            android:name=".LoanTypeOptions"
+            android:label="@string/title_activity_loan_type_options" >
+        </activity>
+        <activity
+            android:name=".DepositMoney"
+            android:label="@string/title_activity_deposit_money" >
+        </activity>
+        <activity
+            android:name=".FAQs"
+            android:label="@string/title_activity_faqs" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.wpits.mwalletsamba.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.wpits.mwalletsamba.permission.C2D_MESSAGE" />
+
+    <!-- receives GCM messages -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM connects to Google services -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+
+    <!-- wake the processor if a GCM message is received -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

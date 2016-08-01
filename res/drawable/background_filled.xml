@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <corners android:radius="5dp" />
+
+    <gradient
+        android:angle="45"
+        android:centerColor="@color/theme_colcor"
+        android:centerX="35%"
+        android:endColor="@color/theme_colcor"
+        android:startColor="@color/theme_colcor"
+        android:type="linear" />
+
+    <padding
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp" />
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/theme_colcor" />
+
+</shape>

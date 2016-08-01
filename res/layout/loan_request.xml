@@ -1,0 +1,423 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wpits.mwalletsamba.Loan_Activity" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@layout/header_gradient"
+        android:paddingBottom="5dip" >
+
+        <!-- Logo Start -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ic_launcher" />
+        <!-- Logo Ends -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@layout/footer_repeat"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Loan Request From 8130835223"
+        android:textColor="@color/mdtp_red" />
+
+    <TextView
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Loan Type: Devlopment Loan"
+        android:textColor="@color/mdtp_red" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:text="Loan Amount: 18000"
+        android:textColor="@color/mdtp_red" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Loan Tenure: 12 Months"
+        android:textColor="@color/mdtp_red" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnloan"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinner2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=" Guarantee Request Status "
+                android:textColor="@color/mdtp_red"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mdtp_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="8130835223" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="2500" />
+
+                <View
+                    android:id="@+id/viewl1"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Accepted" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewg2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mdtp_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="9136311290" />
+
+                <View
+                    android:id="@+id/viewgg2"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="4500" />
+
+                <View
+                    android:id="@+id/viewl2"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Accepted" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewg3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mdtp_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="8928671526" />
+
+                <View
+                    android:id="@+id/viewgg3"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="2500" />
+
+                <View
+                    android:id="@+id/viewgg3"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Waiting" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewg4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mdtp_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="8382938928" />
+
+                <View
+                    android:id="@+id/viewgg4"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="4500" />
+
+                <View
+                    android:id="@+id/viewgg4"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Rejected" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewg5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mdtp_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/editTextm5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="7483929283" />
+
+                <View
+                    android:id="@+id/viewgg5"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="4000" />
+
+                <View
+                    android:id="@+id/viewgg6"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mdtp_red" />
+
+                <TextView
+                    android:id="@+id/editTexta6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:text="Accepted" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewg6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mdtp_red" />
+
+            <TextView
+                android:id="@+id/textViewtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Total Guarantee Amount 18000"
+                android:textColor="@color/mdtp_red"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:weightSum="1" >
+        
+        <Button
+        android:id="@+id/btnloanaccept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Accept Request"
+        android:layout_weight="0.5" />
+        
+          <Button
+        android:id="@+id/btnloanreject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reject Request " 
+        android:layout_weight="0.5"/>
+    </LinearLayout>
+
+</RelativeLayout>

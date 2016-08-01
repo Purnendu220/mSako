@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_colcor">#000099</color>
+    <color name="theme_colcor1">#FFC000</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="custom_color">#f0e49e</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="dark">#FF222222</color>
+    <color name="new_gray">#E9E9E9</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_red">@color/mdtp_accent_color</color>
+
+</resources>

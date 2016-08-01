@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <!-- Header  Starts -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@layout/header_gradient"
+            android:paddingBottom="5dip" >
+
+            <!-- Logo Start -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/ic_launcher" />
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!-- Header Ends -->
+        <!-- Footer Start -->
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_alignParentBottom="true"
+            android:background="@layout/footer_repeat"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+
+        <!-- Login Form -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical" >
+
+            <!-- Name Label -->
+            <!--
+               <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:layout_marginTop="2dip"
+                android:text="Name"/> -->
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:hint="Name"
+                android:singleLine="true" />
+            <!-- NRC Label -->
+            <!--
+               <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:layout_marginTop="2dip"
+                android:text="NRC"/> -->
+
+            <EditText
+                android:id="@+id/nrc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:hint="NRC"
+                android:singleLine="true" />
+            <!-- DOB Label -->
+            <!--
+               <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:layout_marginTop="2dip"
+                android:text="DOB"/> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:hint="DOB"
+                    android:layout_weight=".90"
+                    android:singleLine="true"
+                    android:focusable="false" />
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                     android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/editText"
+                    android:layout_toRightOf="@+id/editText"
+                    android:contentDescription="Select Date"
+                    android:cropToPadding="true"
+                    android:src="@drawable/calendar_icon" />
+            </LinearLayout>
+            <!-- mPin Label -->
+            <!--
+               <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:layout_marginTop="2dip"
+                android:text="mPin"/> -->
+
+            <EditText
+                android:id="@+id/mPin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:hint="mPin"
+                android:password="true"
+                android:singleLine="true" 
+                 android:inputType="numberPassword"
+                 android:maxLength="6"/>
+            <!-- Renenter mPin Label -->
+            <!--
+               <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:layout_marginTop="2dip"
+                android:text="Re_enter mPin"/> -->
+
+            <EditText
+                android:id="@+id/re_mPin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:hint="Reenter mPin"
+                android:password="true"
+                 android:inputType="numberPassword"
+                android:singleLine="true"
+                 android:maxLength="6" />
+            <!-- Renenter alternate mobile Label -->
+            <!--
+               <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:layout_marginTop="5dip"
+                android:text="Alternate Mobile Number"/> -->
+
+            <EditText
+                android:id="@+id/alternate_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:hint="Alternate Mobile Number"
+                android:singleLine="true" 
+                 android:inputType="number"
+                 android:maxLength="10"/>
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:hint="Address"
+                android:singleLine="true" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:hint="Email"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:text="Category"
+                     android:layout_marginLeft="8dip"
+                    android:textColor="#372c24" />
+
+                <RadioGroup
+                    android:id="@+id/radioType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioSubscriber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Subscriber"
+                        android:textColor="#372c24" />
+
+                    <RadioButton
+                        android:id="@+id/radioAgent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agent"
+                        android:textColor="#372c24" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Login button -->
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Register" />
+            <!-- Link to Registration Screen -->
+            <!--
+               <TextView android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+                android:text="Already Register? Login here"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="#0b84aa"/> -->
+
+        </LinearLayout>
+        <!-- Login Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>
